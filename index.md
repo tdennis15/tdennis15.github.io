@@ -14,4 +14,4 @@ I am a double major at Western Oregon University with a focus on Mathematics and
 
 All the code here is developed for the class projects and to help further my education. Any material seen here is free use and all credit has been given to contributors.
 
-[Homework 1](HW1/webpage): HTML, CSS, Git, and Bootstrap 3.3.7
+[Homework 1](/webpage): HTML, CSS, Git, and Bootstrap 3.3.7
