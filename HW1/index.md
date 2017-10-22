@@ -407,3 +407,58 @@ The most important part of any page is how the navigation interacts with the use
     ```
     My personal style of coding may be a little heavy on white space. Python can be a bit of a bear but whitespace allows me to keep a clear separation between elements and containers. 
     
+    ###CSS, The most important and worst looking page.
+    My style sheet helps hold together my page, not literally but in a way that makes it look professional. By far the least organized currently it makes do by just referencing each piece by name. In the future I may design a separate style sheet for each page or break it into sections where the pages all have a naming scheme for elements. such as #payHeader or #careerImg
+    
+    ```html
+    .navbar{
+   background-color: lightgray;
+    border-bottom-color: black;
+    
+}
+
+a:hover {
+    color: aqua;
+}
+#main{
+    border-bottom: solid gray;
+}
+#boxed{
+  
+}
+p {
+    font-size: 150%;
+}
+.box{
+    border: 1px solid black;
+}
+body{
+    background-color: lightblue;
+}
+
+#para1{
+    border: black;
+    color: white;
+    box-shadow: 5px 5px 2px gray;
+}
+
+#payscale, th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+dl{
+    display: block;
+    padding-top: 5px;
+    }
+dt{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#CmEng{
+ max-height: 100%;
+ max-width: 100%;
+    box-shadow: inset 0px 50px 40px 40px #DBA632;
+}
+```
+    
