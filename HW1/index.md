@@ -47,6 +47,7 @@ The CDN of bootstrap is listed below. The function is to give built in library f
 ```
 
 The most important part of any page is how the navigation interacts with the user. A clean crisp layout with intuitive controls makes the user feel welcome and ready to explore. That aside I do what I can. 
+
 ```html
   <div class="container">
 
@@ -81,13 +82,16 @@ The most important part of any page is how the navigation interacts with the use
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
+      
       ```
       
       This nav-bar is a carbon copy from the default navbar found in the bootstrap docs. The utility is clean but doesn't seem to be very mobile friendly currently. W.I.P. Apart from the Nav-Bar this is mostly fill in the empty space with content about the topic. For the rest of the pages just follow the instructions found [here](http://www.wou.edu/~morses/classes/cs46x/assignments/HW1.html).
       
-  ## Page 1
+  ## Page 1 Index / Home
   Below is a dump of the index page for the website. Without the CSS it becomes a mess and ugly. It could do with more time in but as a resource jumping point it is thouroughly adequate. 
+  
   ```html
+  
   <!DOCTYPE html>
     <html lang="en">
         
@@ -189,6 +193,7 @@ The most important part of any page is how the navigation interacts with the use
 </html>
 
   ```
+  
   I like having a footer at the bottom over every page even if the "about" reference is currently empty. It adds a little professionalism with out being difficult.
   
   ## Sub-Page Career
