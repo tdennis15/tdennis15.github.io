@@ -85,7 +85,7 @@ The most important part of any page is how the navigation interacts with the use
       
       This nav-bar is a carbon copy from the default navbar found in the bootstrap docs. The utility is clean but doesn't seem to be very mobile friendly currently. W.I.P. Apart from the Nav-Bar this is mostly fill in the empty space with content about the topic. For the rest of the pages just follow the instructions found [here](http://www.wou.edu/~morses/classes/cs46x/assignments/HW1.html).
       
-  ###Page 1
+  ## Page 1
   Below is a dump of the index page for the website. Without the CSS it becomes a mess and ugly. It could do with more time in but as a resource jumping point it is thouroughly adequate. 
   ```html
   <!DOCTYPE html>
@@ -191,7 +191,7 @@ The most important part of any page is how the navigation interacts with the use
   ```
   I like having a footer at the bottom over every page even if the "about" reference is currently empty. It adds a little professionalism with out being difficult.
   
-  ###Sub-Page Career
+  ## Sub-Page Career
   Careers page is a blurb about the different types of careers involved with computers. A little lacking in content makes me less than pleased by work must be dedicated to areas that need it more. It includes a <dl></dl> list made to separate jobs into different categories.
   
   ```html
@@ -284,7 +284,7 @@ The most important part of any page is how the navigation interacts with the use
     </body>
     ```
     
-    ###Sub-Page Pay Scale
+    ## Sub-Page Pay Scale
     Creating a table on a webpage is thankfully made very easy with the use of Bootstrap and HTML5. Its as simple as just declaring columns, filling in by element, then going down a row. Using the style sheet for borders by naming the table helps to put all of the editing in one spot for the design and the data in another location. A separate style sheet creates a model of separation between content and presentation to bring a better user experience based upon the viewmodels. 
     ```html
     <!DOCTYPE html>
@@ -407,7 +407,7 @@ The most important part of any page is how the navigation interacts with the use
     ```
     My personal style of coding may be a little heavy on white space. Python can be a bit of a bear but whitespace allows me to keep a clear separation between elements and containers. 
     
-    ###CSS, The most important and worst looking page.
+    ## CSS, The most important and worst looking page.
     My style sheet helps hold together my page, not literally but in a way that makes it look professional. By far the least organized currently it makes do by just referencing each piece by name. In the future I may design a separate style sheet for each page or break it into sections where the pages all have a naming scheme for elements. such as #payHeader or #careerImg
     
     ```html
