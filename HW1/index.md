@@ -286,7 +286,9 @@ The most important part of any page is how the navigation interacts with the use
     
     ## Sub-Page Pay Scale
     Creating a table on a webpage is thankfully made very easy with the use of Bootstrap and HTML5. Its as simple as just declaring columns, filling in by element, then going down a row. Using the style sheet for borders by naming the table helps to put all of the editing in one spot for the design and the data in another location. A separate style sheet creates a model of separation between content and presentation to bring a better user experience based upon the viewmodels. 
+    
     ```html
+    
     <!DOCTYPE html>
 <html>
     <head>
@@ -404,6 +406,7 @@ The most important part of any page is how the navigation interacts with the use
     </footer>
     </body>
 </html>
+
     ```
     My personal style of coding may be a little heavy on white space. Python can be a bit of a bear but whitespace allows me to keep a clear separation between elements and containers. 
     
