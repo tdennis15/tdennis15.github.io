@@ -33,13 +33,13 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="career.html">Careers</a></li>
               <li><a href="pay.html">PayScale</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Homework Coding <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="jQueryPage.html">Homework 2 JS/ jQuery</a></li>
+                  <li class="active"><a href="#">Homework 2 JS/ jQuery</a></li>
                   <li><a href="#">Facts</a></li>
                   <li><a href="#">About the Creator</a></li>
                   
@@ -50,55 +50,72 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-
-        
-         
-        
-        
-        
-        
-      <div class="container">
-                  
-         <div class="row">
-          <div class="col-xs-8">
-                       
-        <div id="boxed">
-        <h1 id="main">Education in the Computer industry</h1>
-        <p></p>
-        <p id="para1">
-        Consider the value of education when working with computers. Knowing that the new technology moves faster than a class room can and old technology staying the same, what use can a formal education be?
-        </p>
-            <p>
-           Learning is not exclusive to the classroom or structured setting. I believe that the majority of careers in the Computer fields do not need a formal education for entry level positions. The only need would arise from the desire to be competitive and the desire to be promotable. At the lower entry levels the hard technical skills are deemed more valuable, but as the teams get larger, having a degree shows that you have experience developing your soft skills. Communication and team work are not a core programming skill, but they are a core work skill.
-            </p>
-      </div>
+      
+      <h1>This is the page to demonstrate JS and jQuery.</h1>
+      <p1>The goal here is to have input from the user be processed by JS/jQuery to produce a table as an output.
+        The design is to have multiple inputs allowed and to have a consistent output type. Here the implementation is to create a table based upon the users input on a drop down list. This input will be in the form of a career choice that will return a table of values of the salary based upon the experience gained in the field. The user can then input the amount of years working at the chosen career to recieve an estimate of how much their earnings could be.</p1>
+      
+      
+		<div class="regularForm">
+          <form id="careerChoice">
+            <fieldset>
+             <legend>Choose your Career, Enter your Experience, Tell us the desired length of your tenure</legend>
+              <label for="careerSelect">
+                <p>Drop down list of career choices</p>
+                <input list="careers" name="career" required>
+                  <datalist id="careers">
+                    <option value="Software Engineer">
+                    <option value="Android Software Dev.">
+                    <option value="Cyber Security Eng.">
+                    <option value="Information Security Eng.">
+                  </datalist>
+              <p>Years of Experience</p>
+              <input type="text" name="experience" required>
           
-             </div>
-             <div class="col-xs-4">
-             <fieldset>
-                 <legend>Note</legend>
-                 <p>This is an exercise in webpage creation and not to be used for information beyond what can be easily accessed by internet query.</p>
-                 </fieldset>
-             </div>
-          
-          
-          </div>         
-        
-        </div>
-
-    </div> <!-- /container -->
-    
-    <footer class="footer">
+              <p>Number of Years to work there</p>
+              <input type="text" name="timeWork" required>
+              <input type="submit">
+              
+              </label>                        
+            </fieldset>
+           
+</form>
+		</div>
+		<div id="careerTable">
+			<!-- Area the table gets generated to by JS-->
+		</div>
+      
+      
+      
+      
+      
+      
+      <footer class="footer">
       <div class="container">
         <span class="text-muted">Site made by TJ Dennis for demonstration in CS460 Fall Term @ WOU Monmouth, OR 97361 <a href="#">About</a></span>
       </div>
     </footer>
-
-     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    </body>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      </body>
 </html>
+
+      
