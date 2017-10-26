@@ -61,29 +61,37 @@
             <fieldset>
              <legend>Choose your Career, Enter your Experience, Tell us the desired length of your tenure</legend>
               <label for="careerSelect">
+                
                 <p>Drop down list of career choices</p>
-                <input list="careers" name="career" required>
-                  <datalist id="careers">
-                    <option value="Software Engineer">
-                    <option value="Android Software Dev.">
-                    <option value="Cyber Security Eng.">
-                    <option value="Information Security Eng.">
-                  </datalist>
-              <p>Years of Experience</p>
-              <input type="text" name="experience" required>
+                <ul class="radio"> 
+                  <li><input id="car1" type="radio" name="career" value="SE" checked/>Software Engineer</li>
+                  <li><input id="car2" type="radio" name="career" value="ASD" /> Android Software Dev.</li>
+                  <li><input id="car3" type="radio" name="career" value="CSE" /> Cyber Security Eng.</li>
+                  <li><input id="car4" type="radio" name="career" value="ISE" /> Information Security Eng.</li>
+                               
+                </ul>
+                  
+                               
+                                
+              <p>Years of Related Experience</p>
+              <input id="exp" type="number" name="exp" value="0" min="0" max="20">
           
               <p>Number of Years to work there</p>
-              <input type="text" name="timeWork" required>
+              <input id="tenure" type="number" name="tenure" value="1" min="0" max="50">
+                
               <input type="submit">
               
               </label>                        
             </fieldset>
            
-</form>
+          </form>
 		</div>
 		<div id="careerTable">
+          <p>text</p>
 			<!-- Area the table gets generated to by JS-->
 		</div>
+      
+      
       
       
       
@@ -97,24 +105,12 @@
     </footer>
   </div>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+   <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/hw2.js"></script>
       </body>
 </html>
 
