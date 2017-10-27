@@ -3,20 +3,22 @@
   The inputs are a career choice, amount of exerience, and desired career length.
 */
 
-const careers = ["Software Engineer", "Android Software Dev.","Cyber Security Eng","Information Security Eng."];
+
+var careers = ["Software Engineer", "Android Software Dev.", "Cyber Security Eng", "Information Security Eng."];
 var career;
 var exp;
 var tenure;
 
-function checkRadio(){
-  if($('#car1').prop('checked'))
-     career = careers[0];
-  if($('#car2').prop('checked'))
-     career = careers[1];
-  if($('#car3').prop('checked'))
-     career = careers[2];
-  if($('#car4').prop('checked'))
-     career = careers[3];
+function checkRadio() {
+  "use strict";
+  if ($('#car1').prop('checked')) {career = careers[0]; }
+     
+  if ($('#car2').prop('checked')) {career = careers[1]; }
+     
+  if ($('#car3').prop('checked')) {career = careers[2]; }
+     
+  if ($('#car4').prop('checked')) {career = careers[3]; }
+     
   
   exp = $('#exp').val();
   tenure = $('#tenure').val();
@@ -27,15 +29,12 @@ function checkRadio(){
   Build a table based upon the basic inputs provided, Defaulted to careers[1],
 */
 
-$('#careerChoice').submit) {
+$('#careerChoice').submit(function (event) {
+  event.preventDefault();
+  "use strict";
   checkRadio();
-  //$('careerTable').empty();
-  $('#careerTable').append(career);
-  //$('careerTable').apend(tenure);
- // $('careerTable').apend(exp);
-})
+  $('#careerTable').empty();
+  $('#careerTable').append(career + " " + tenure + " " + exp);
 
-function careerTable(){
-  
-  
-}
+});
+
