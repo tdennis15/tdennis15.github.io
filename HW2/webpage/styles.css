@@ -47,3 +47,16 @@ dt{
  max-width: 100%;
     box-shadow: inset 0px 50px 40px 40px #DBA632;
 }
+
+/*
+  CSS for jQuery Table
+*/
+#careerChoice{
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+}
+#careerTable{
+  border: 1px solid white;
+  padding-top: 15px;
+  padding-left: 15px;
+}
