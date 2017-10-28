@@ -10,6 +10,8 @@ TheNewBoston on youtube for the 200 video long tutorial playlist on jQuery alone
 ## Link to Webpage 
 [HOMEWORK 2](/HW2/webpage/jQueryPage.html)
 
+[HOMEWORK 2 Homepage](/HW2/webpage/) : backup link, travel to the drop down menu in Nav bar for link.
+
 ### Step 1: link a new source for the jQuery 
 
 For the second project in the Senior Sequence, I created a web page that will take user input in the form of a radio button and 2 integers and return a table that calculates a fake salary and total wages earned. The focus is to use a form and let a separate JS file do the work in the background.
