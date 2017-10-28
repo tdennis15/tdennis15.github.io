@@ -7,6 +7,9 @@ layout: default
 A lot of credit goes to W3Schools for their tutorials on jQuery and JS and to
 TheNewBoston on youtube for the 200 video long tutorial playlist on jQuery alone. This YT channel has thousands of bite (byte) sized coding tutorials that are topic specific. 10/10 recommend.
 
+## Link to Webpage 
+/HW2/webpage/jQuery.html
+
 ### Step 1: link a new source for the jQuery 
 
 For the second project in the Senior Sequence, I created a web page that will take user input in the form of a radio button and 2 integers and return a table that calculates a fake salary and total wages earned. The focus is to use a form and let a separate JS file do the work in the background.
