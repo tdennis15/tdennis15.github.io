@@ -24,7 +24,7 @@ namespace PostFixCalculator
             Calculator app = new Calculator();
             bool playAgain = true;
             Console.WriteLine("\nPostfix Calculator. Program Recognizes operators of: + - * /");
-
+            
             while (playAgain)
             {
                 playAgain = app.doCalculation();
@@ -90,65 +90,90 @@ namespace PostFixCalculator
 
             stack.clear(); //clearing stack of any garbage from previous calcs or random crap.
 
-            String token; // Stores the operator
+            String s; // Stores the operator
             double a;     // Temp Variable for first value of input
-            double temp1;     // .. for a double output
-            double b; //second value b
-            double answer = 0.0; //where the answer will be stored.
+            double b;
+            double c; //answer
 
-            string[] UserInputs = input.Split(' '); //splits the input string into an array based upon spaces
+            double checker;
+
+            string[] UserInputs = input.Split(new char[0]); //splits the input string into an array based upon spaces
             //used a separate loop from OG code to help determine all the inputs in C#, while loops aren't my friend
             //loop to travel through all of the inputs given by the user
-            for (int c = 0; c < UserInputs.Length - 1; c++)
+            for (int i = 0; i < UserInputs.Length; i++)
             {
-                if (double.TryParse(UserInputs[c], out temp1))
+                if (double.TryParse(UserInputs[i], out checker))
                 {
-                    stack.Push(temp1); //pushing numbers of type double into the stack
+                    stack.Push(Convert.ToDouble(UserInputs[i])); //pushing numbers of type double into the stack
                 }
                 //couldnt get the information from the user correctly and present the proper error message
                 else
                 {
+                    s = UserInputs[i];
                     //checking for empty stack
-                    if (stack.isEmpty)
+                    if (stack.isEmpty())
                     {
-                        throw new ArgumentException("Incorrect input, empty stack when looking for next value.");
+                        throw new ArgumentException("Incorrect input, empty stack when looking for second operand.");
                     }
 
+                    b = (Convert.ToDouble(stack.pop()));
                     //operator or character that wasnt expected, post fix is a, b, + where a and b are numbers and + is the operation
-                    else if (UserInputs[c].Length > 1)
-                    {
-                        throw new ArgumentException("Input fault: " + UserInputs[c] + "could not be parsed.");
-                    }
+                    if (stack.isEmpty())
+                         {
+                         throw new ArgumentException("Input fault: Stack was empty when looking for first operand.");
+                         }
 
-                    else
-                    {
-                        // store operand a from stack
-                        Node node1 = (Node)stack.Pop();
+                    a = (Convert.ToDouble(stack.pop()));
+                    c = doOperation(a, b, s);
 
-                        // store operand b
-                        Node node2 = (Node)stack.Pop();
+                    stack.Push(Convert.ToDouble(c));
 
-                        // store a and b in our local variables
-                        a = (double)node1.Data; //casting the stack value as double since it was checked above
-                        b = (double)node2.Data; // same as a
-
-                        token = UserInputs[c]; //get the operation + - * /
-
-                        answer = doOperation(token, a, b); //passing the inputs to a new function to do the math
-                        //pushing answer to stack
-                        stack.Push(answer);
-                    }// end second if / else
-                }// end first if/ else
-
+             }
             } //end of loop
             //return the solution to rest of the program
-            return Convert.ToString(answer); //given as a string
+            return stack.pop().ToString(); //given as a string
         }
 
         /*
-         * 
+         * Arithmetic operation kept separate for modularity  
          * */
-
+         public Double doOperation(double a, double b, String s)
+        {
+            double c = 0.0;
+            if(s == "+")
+            {
+                c = (a + b);
+            }
+            else if(s == "-")
+            {
+                c = (a - b);
+            }
+            else if(s == "*")
+            {
+                c = (a * b);
+            }
+            else if(s == "/")
+            {
+                try
+                {
+                    c = (a / b);
+                    if(c == Double.NegativeInfinity || c == Double.PositiveInfinity)
+                    {
+                        throw new ArgumentException("Can't Divide by zero mate. Learn mucho mas maths");
+                    }
+                }
+                catch(ArithmeticException e)
+                {
+                    throw new ArithmeticException(e.ToString());
+                }
+            }
+            else
+            {
+                throw new ArgumentException("Improper operator: '" + s.ToString() + "', is not found, Try +, -, *, or /");
+            }
+            return c;
+        }
         
     }
 }
+//End of Class Calculator
