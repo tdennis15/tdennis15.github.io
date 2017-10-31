@@ -8,6 +8,7 @@ Credits: William Leingang (hope that's how its spelled) and Aaron Earl gave me t
 
 ### Conception
 To start this project I went through the javacode provided in the [assignment description](http://www.wou.edu/~morses/classes/cs46x/assignments/HW3.html). This is a Post fix calculator.
+[Link to REPO with the solution and supporting files](https://github.com/tdennis15/tdennis15.github.io).
 A post fix calculator takes the two operands 'a' and 'b' and then looks for the operation '+ - * /' for example. It may seem counter intuitive at first but once familiar going through a lot of simple operations goes much faster. 
 The goal of this project is to convert the Java code given to a C# code base. A relatively simple task as the two languages are fairly object oriented and a lot of the method calls convert in a 1:1 ratio. The biggest difficulty would be when Java uses the 
 ```java 
