@@ -17,3 +17,5 @@ All the code here is developed for the class projects and to help further my edu
 [Homework 1](/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
 
 [Homework 2](/HW2/): Javascript, JQuery, Form Elements
+
+[Homework 3](/HW3/): C# conversion therapy from JAVA xD
