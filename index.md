@@ -20,3 +20,5 @@ All the code here is developed for the class projects and to help further my edu
 [Homework 2](/HW2/): Javascript, JQuery, Form Elements
 
 [Homework 3](/HW3/): C# conversion therapy from JAVA xD
+
+[Homework 4](/HW$/): C# MVC ASP.NET Core web application NO database.
