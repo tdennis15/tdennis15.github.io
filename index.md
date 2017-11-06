@@ -21,4 +21,4 @@ All the code here is developed for the class projects and to help further my edu
 
 [Homework 3](/HW3/): C# conversion therapy from JAVA xD
 
-[Homework 4](/HW$/): C# MVC ASP.NET Core web application NO database.
+[Homework 4](/HW4/): C# MVC ASP.NET Core web application NO database.
