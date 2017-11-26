@@ -20,7 +20,7 @@ In this repository I created a shell MVC with a .gitignore file. Since this is a
 
 Visual Studio has web development packages that make MVC applications a breeze to work with. Simply create a new project that is ASP.NET Core, then on the next screen specify MVC for the template. This will generate the basic classes and supporting files needed in order to create a working application. In fact the default template is already in a buildable state with data about web applications. Yet all of the included webpage files and the controller isn't needed. I started off with deleted the items in the ~/views/home folder.
 
-![Setup](/images/setup.png)
+![Setup](/HW4/images/setup.png)
 
 Without adding any content to the project I went and grabbed a .gitignore file (usually found under VisualStudio.gitignore) and then used the command line to rename the file so that it doesn't need the pre-extention portion. The gitignore will make it so that temporary files and objects that are not needed for the build won't get added to a repository. This will reduce the clutter and add to the readability of the project for others.
 
@@ -36,7 +36,7 @@ Every project needs a place to start. The first web page that was created was th
 
 First, an introduction and overview of the project is written to the document. Note the @ViewBag, this is a razor notation. Razor will generate html code as a function. This will be more usefull later in the project. 
 
-![HomePage](/images/homepage.png)
+![HomePage](/HW4/images/homepage.png)
 
 #### ~VIEW~
 
@@ -77,7 +77,7 @@ Add this page to the repo.
 
 The first page is a html form in a view that will be handled by a controller. The method of the data return will be through a @viewbag. While this may not be the cleanest way to do things it is an easy way to have a view interact with a controller. For simplicity the user will input a score and a total score to calculate their grade. The way information gets passed is through querystring requests. 
 
-![PAGE 1](/images/page1.png)
+![PAGE 1](/HW4/images/page1.png)
 
 
 #### ~VIEW~
@@ -161,7 +161,7 @@ The try{} \ catch{} implementation is a measure against tampering.
 Page 2 is a bit more complicated than page 1. Instead of having each data element pulled from their given ID tags, the controller is passed the form on the 'submit' action. 
 The premise of Page 2 is an insult generator that uses the date of entry as a seed. Instead of placing a calender on the web page, I simplified the inputs. Again data is returned via the ViewBag.Message
 
-[PAGE 2](/images/page2.png)
+[PAGE 2](/HW4/images/page2.png)
 
 #### ~VIEW~
 
@@ -245,7 +245,7 @@ Each of these values will then be used to determine what the monthly payment is 
 
 The inputs are strongly typed and given default values in order to avoid funny business. 
 
-[PAGE 3](/images/page3.png)
+[PAGE 3](/HW4/images/page3.png)
 
 #### ~VIEW~
 ```csharp
