@@ -204,7 +204,7 @@ Here a foreach loop was used to create the different items.
 
 
 
-![bike.PNG](bike.PNG)
+![bike.PNG](/HW6/img/bike.PNG)
 
 Next was the page displaying the different items available under each subcategory.
 
@@ -212,11 +212,11 @@ This used the same logic as the previous.
 
 Next we have the page that lists the individual product
 
-![products.PNG](Products.PNG)
+![products.PNG](/HW6/img/Products.PNG)
 
 And finally you arrive at the individual product
 
-![pump.png](pump.PNG)
+![pump.png](HW6/img/pump.PNG)
 
 
 
