@@ -59,6 +59,9 @@ Now the database is in our project.
 I had no problems getting linq to connect to my database but many others did. My process was to instal Linq, run it, add a connection on the left panel, have the server be my local server, and have it point to one of the .mdf files (it wont matter which until we change the one in the project).
 After that you need to have the connection on the right set (they make you change it by hand) to the database, and then select which language that the queries will be written in.
 
+![Linq1](/HW6/img/Linq.PNG)
+![Ling2)](/HW6/img/LinqWorking.PNG)
+
 ### Controller
 -new git branch-
 
