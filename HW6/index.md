@@ -199,7 +199,8 @@ Here a foreach loop was used to create the different items.
         {
             <div class="col-md-4" style="border: 1px double black; padding: 1px;"><h4>@Html.ActionLink(item.Name, "Products", new { ID = item.ProductSubcategoryID })</h4></div>
          }
-    </div>
+    </div>cd ..
+    
 ```
 
 
@@ -216,7 +217,7 @@ Next we have the page that lists the individual product
 
 And finally you arrive at the individual product
 
-![pump.png](HW6/img/pump.PNG)
+![pump.png](/HW6/img/pump.PNG)
 
 
 
