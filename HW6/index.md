@@ -222,5 +222,11 @@ And finally you arrive at the individual product
 
 ![pump.png](/HW6/img/pump.PNG)
 
+## Link to the video demonstrating the website
+
+![Video1](/HW6/Videos/HW6.mp4)
+
+![Video2](/HW6/Videos/HW6.flv)
+
 
 
