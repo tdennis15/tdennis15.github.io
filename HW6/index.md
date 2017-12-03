@@ -224,9 +224,9 @@ And finally you arrive at the individual product
 
 ## Link to the video demonstrating the website
 
-![Video1](/HW6/Videos/HW6.mp4)
+[Video1](/HW6/Videos/HW6.mp4)
 
-![Video2](/HW6/Videos/HW6.flv)
+[Video2](/HW6/Videos/HW6.flv)
 
 
 
