@@ -2,6 +2,7 @@
 title: Travis Dennis
 layout: default
 ---
+
 ## CS 460 Project 6 MVC App with large database connection
 
 [LINK TO HW6 REPO](https://github.com/tdennis15/Homework6)

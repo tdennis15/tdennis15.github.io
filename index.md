@@ -21,8 +21,14 @@ All the code here is developed for the class projects and to help further my edu
 
 [Homework 3](/HW3/): C# conversion therapy from JAVA xD
 
-[Homework 4](/HW4/): C# MVC ASP.NET Core web application NO database.
+[Homework 4](/HW4/): C# MVC ASP.NET web application NO database.
 
-[Homework 5](/HW5/): C# MVC ASP.NET Core web application with local database.
+[Homework 5](/HW5/): C# MVC ASP.NET web application with local database.
 
 [Homework 6](/HW6/): Web application from a large preexisting database called AdventureWorks
+
+[Homework 7](/HW7/): Web API MVC application to interact with GIPHY
+
+[Homework 8](/HW8/): Web application from custom database with Ajax implementation.
+
+[Homework 9](/HW9/): Deploying Homework 8 on the Azure cloud servers.
