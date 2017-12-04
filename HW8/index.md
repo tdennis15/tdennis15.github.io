@@ -17,7 +17,7 @@ To start with I created an ER Diagram in an XML program to help me understand wh
 
 ![ER](/HW8/ER.PNG)
 
-Note that the datatypes and values are a guideline. I have made modifications as were needed when constructing the database. For instance the Genre PK is not used.
+Note that the datatypes and values are a guideline. I have made modifications as were needed when constructing the database. For instance the Genre PK is not used until the JavaScript was implemented.
 
 ### SQL
 
@@ -52,25 +52,25 @@ CREATE TABLE dbo.ArtWorks
 
 CREATE TABLE dbo.Genre
 (
+	GenreID Int IDENTITY(1,1) NOT NULL,
 	Genre	VARCHAR(24) NOT NULL,
-	CONSTRAINT [PK_dbo.Genre] PRIMARY KEY CLUSTERED (Genre ASC)
+	CONSTRAINT [PK_dbo.Genre] PRIMARY KEY CLUSTERED (GenreID ASC)
 );
 
 CREATE TABLE dbo.Classifications (
 	CID				INT IDENTITY(1,1) NOT NULL,
 	AWID			INT NOT NULL,
-	Genre			VARCHAR(24) NOT NULL,
+	GenreID			INT NOT NULL,
 
 	CONSTRAINT[PK_dbo.class] PRIMARY KEY CLUSTERED (CID ASC),
 	CONSTRAINT[FK_dbo.ArtWorks_Class] FOREIGN KEY (AWID)
 		REFERENCES dbo.ARTWORKS (ID)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE,
-	CONSTRAINT[FK_dbo.GENRES_CLASSIFICATIONS] FOREIGN KEY (Genre)
-		REFERENCES dbo.Genre (Genre)
+	CONSTRAINT[FK_dbo.GENRES_CLASSIFICATIONS] FOREIGN KEY (GenreID)
+		REFERENCES dbo.Genre (GenreID)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-);
 
 ```
 
@@ -100,15 +100,15 @@ Insert Into dbo.Genre(Genre) Values
 	('Portrait'),
 	('Renaissance');
 
-Insert INTO dbo.Classifications(AWID, Genre) Values
-	('1','Tesselation'),
-	('2','Tesselation'),
-	('2','Surrealism'),
-	('3','Portrait'),
-	('3','Renaissance'),
-	('4','Renaissance'),
-	('5','Tesselation'),
-	('6','Surrealism');
+Insert INTO dbo.Classifications(AWID, GenreID) Values
+	('1','1'),
+	('2','1'),
+	('2','2'),
+	('3','3'),
+	('3','4'),
+	('4','4'),
+	('5','1'),
+	('6','2');
 
 
 	GO
@@ -348,7 +348,7 @@ Then we need razor foreach loop to iterate over each of the genre types and crea
     @foreach (var item in Model.ToList())
     {
        <div class="col-md-3"> 
-           <button onclick="JavaAJAX_Call('@item.Genre1');">@item.Genre1</button>
+           <button onclick="JavaAJAX_Call('@item.GenreID');">@item.Genre1</button>
        </div> 
     }
 
@@ -378,21 +378,30 @@ Type: post is the action we are using in order to display the data
 on success: Return a function with the data that will append each item in the list to our div. 
 
 ``` Javascript
-function JavaAJAX_Call(genre) {
+function JavaAJAX_Call(genreID) {
     document.getElementById('landing_zone').innerHTML = null;
-
+    console.log(genreID);
+    var source = "/Home/GenreResult?id=" + genreID;
+    console.log(source);
     $.ajax({
-        url: "/Home/Genre/",
-        data: { genre: genre },
-        type: "POST",
-        //datatype: "json",
-        success: function (returnData) { 
-            returnData.arr.forEach(function (item) {
-                $('#landing_zone').append(item);
-            }
-            );
+        type: "GET",
+        dataType: "json",
+        url: source,
+        success: function (data) {
+            returnToHTML(data);
+        },
+        error: function (data) {
+            alert("There was an error. Try again please!");
         }
     });
+}
+
+function returnToHTML(data) {
+    $("#landing_zone").empty();
+    $.each(data, function (i, field) {
+        $("#landing_zone").append("<p>" + field["Title"] + " by " + field["ArtistName"] + "</p>");
+    });
+    $("#landing_zone").css("display", "block");
 }
 
 ```
@@ -404,36 +413,41 @@ Thats a mess. I agree. Now we need to build the controller for Genre
 I warn you that this will be messy.
 
 ``` csharp
- // POST: Home/Genre
- [HttpPost]
-public JsonResult Genre(string genre)
- {
-    var artwork = db.Genres.Find(genre).Classifications.ToList().OrderBy(t => t.ArtWork.Title).Select(a => new { aw = a.AWID, awa = a.ArtWork.ID }).ToList();
-     string[] artworkCreator = new string[artwork.Count()];
-     for (int i = 0; i < artworkCreator.Length; ++i)
-     {
-      artworkCreator[i] = $"<ul>{db.ArtWorks.Find(artwork[i].aw).Title} by {db.Artists.Find(artwork[i].awa).ArtistName}</ul>";
-      }
-        var data = new
-         {
-             arr = artworkCreator
-           };
+  // POST: Home/Genre
+        [HttpGet]
+        public JsonResult GenreResult(int? id)
+        {
+            //data checking for sanity
+            if (id == null)
+            {
+                return null;
+            }
 
-        return Json(data, JsonRequestBehavior.AllowGet);
-  }
+            //our JSON object that will be returned
+            var artCollection = db.Genres.Where(g => g.GenreID == id) //getting the Genre from the ID
+                                .Select(x => x.Classifications) //Getting the classifications that have that genre
+                                .FirstOrDefault()//making sure we can find the head of the list
+                                .Select(x => new { x.ArtWork.Title, x.ArtWork.Artist.ArtistName }) //Get the title of the artwork and the artist name
+                                .OrderBy(x => x.Title) //abc ordering
+                                .ToList(); //return it as a list type instead of an enumerable.
+            return Json(artCollection, JsonRequestBehavior.AllowGet); //return the object to the CustomJS.js JavaAJAX_Call function.
+        }
 ```
-Okay, so we have a controler of type JsonResult that takes a string of genre as a parameter. 
-Next a variable of artwork is created by going into db.Genres finding the genre that was passed as a paramenter, going to classifications and building a list. Then it gets ordered by title. Next it gets selected by artwork ID and a List gets built.
+Breaking down this long function will make it easier to understand. Linq was essential here to building this because each step I could see my returns and know what values I would have access to. 
 
-Now we have an artwork list but no way of returning it and its just gibberish, it wouldn't display properly. So a little organization is needed.
+First data check to make sure that our input was good. 
 
-artworkCreator is used to do this. Its initialized to the size of the artwork list we created.
+Next create a variable to build our data. We have the genre ID so we can start with that. 
 
-In the for loop we iterate over each element and then create the Javascript object that will be returned.
-Each element gets the title pulled, then the artist pulled and put into a format the system can read on the return.
+Find the genre in our db context
 
-Next we create an array based upon the list and return the function. Very messy indeed.
-.
+select the classifications that relate to each genre and do a first or default
+
+select the artwork title and the artwork artist, we used classifications as a medium because it has access to both through artworks
+
+order these in alphabetical order and make it into a list.
+
+Next return the object with the collection and the allowget behavior.
 
 ### Data validation
 Lastly the Edit and Create feature of our project needs to make sure that the information we get isn't crazy. Future birthdates, excessive names and such.
@@ -475,6 +489,6 @@ function validateForm() {
 
 That will do I suppose. 
 
-[Here Is a link](/HW8/Video/HW8.mp4) to a video of the progam in action.
+[Here Is a link](/HW8/Video/HW8.mp4) to a video of the progamme in action.
 
 
