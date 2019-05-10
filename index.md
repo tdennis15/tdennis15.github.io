@@ -31,7 +31,7 @@ The first part of the senior sequence of classes is working in .NET framework wi
 
 [Project 8](SoftwareEngineering_I/HW8/): Web application from custom database with Ajax implementation.
 
-[Project 9]: Deploying Homework 8 on the Azure cloud servers.
+Project 9: Deploying Homework 8 on the Azure cloud servers.
 
 
 ### Software Engineering II (CS461): 
@@ -49,3 +49,14 @@ The third and final course of the senior sequence was about application lifecycl
 [Repository for Whiskey Tango Foxtrot](https://bitbucket.org/tdennis15/drunkencoders/src/master/)
 
 This project is a .NET web application oriented around interacting with the Veterans Affairs API to help give information to potential VA clients and provide a place to discuss various problems with (potential) service providers. Creation and implementation of this project was in C# on Azure Web Services on the Cloud. Additionally we created a testing suite to verify that the project continues to function properly through different builds. This project has the same technical requirements as the one above.
+
+
+### Block Chain & Crypto Currencies (CS 480):
+
+Argueably my favorite elective, this course went over the history and future of blockchain as it applies to business and market intelligence. Blockchain is a method to build trust in a network that is inherently trustless. That way actions commited to the blockchain can be certified and any dependencies on that information is stable. There are two main types of blockchains, private and public. Public is the style used by cryptocurrency as everyone can join in, and everyone can have a full copy of the history. The interesting side of private blockchains is that an admin can regulate users and effect control over it. 
+
+[View](Blockchain/TravisDennisLab2.pdf)
+I developed an application using Hyper Ledger Fabric that was managing the movement of fish in a market setting from a transaction point of view. This was a cradle to grave following of the fish. Covering aspects such as making new IDs with fish being caught, players such as licencing officals, restaurant owners and fishers all having unique IDs. This used a private blockchain setup with an admin able to add and remove users. 
+
+
+
