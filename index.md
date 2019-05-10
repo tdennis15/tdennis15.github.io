@@ -2,33 +2,51 @@
 title: Travis Dennis
 layout: default
 ---
-## CS 460 Portfolio
+## Github Portfolio
 
-This page contains the work of Travis Dennis during the 2017-18 year at WOU in Monmouth. The focus of the content is from the Software Engineering coures.
+This page contains links to work of Travis Dennis during the computer science degree at Western Oregon University. Development environments range from Java with Eclipse, C# with Visual Studios, and Python using Anaconda / Jupyter Notebook
+
 [Main REPO storage location](https://github.com/tdennis15/tdennis15.github.io). 
 
 ### About Me
 
-I am a double major at Western Oregon University with a focus on Mathematics and Computer Science. My career goals involve security systems protection and the infrastructure involved in preventing attacks. 
+Junior Developer and recent graduate of Western Oregon University with a double major in Mathematics and Computer Science. My professional apsirations include working with machine learning, data science, and software engineering. 
 
-### Software Engineering I (CS460): Homeworks
+### Software Engineering I (CS460): 
 
-All the code here is developed for the class projects and to help further my education. Any material seen here is free use and all credit has been given to contributors.
+The first part of the senior sequence of classes is working in .NET framework with full stack development. This was done with Visual Studios Community Edition 2017 with modules such as Entity Framework and SQL Server.
 
-[Homework 1](/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
+[Project 1](/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
 
-[Homework 2](/HW2/): Javascript, JQuery, Form Elements
+[Project 2](/HW2/): Javascript, JQuery, Form Elements
 
-[Homework 3](/HW3/): C# conversion therapy from JAVA xD
+[Project 3](/HW3/): C# conversion therapy from JAVA xD
 
-[Homework 4](/HW4/): C# MVC ASP.NET web application NO database.
+[Project 4](/HW4/): C# MVC ASP.NET web application NO database.
 
-[Homework 5](/HW5/): C# MVC ASP.NET web application with local database.
+[Project 5](/HW5/): C# MVC ASP.NET web application with local database.
 
-[Homework 6](/HW6/): Web application from a large preexisting database called AdventureWorks
+[Project 6](/HW6/): Web application from a large preexisting database called AdventureWorks
 
-[Homework 7](/HW7/): Web API MVC application to interact with GIPHY
+[Project 7](/HW7/): Web API MVC application to interact with GIPHY
 
-[Homework 8](/HW8/): Web application from custom database with Ajax implementation.
+[Project 8](/HW8/): Web application from custom database with Ajax implementation.
 
-[Homework 9](/HW9/): Deploying Homework 8 on the Azure cloud servers.
+[Project 9](/HW9/): Deploying Homework 8 on the Azure cloud servers.
+
+
+### Software Engineering II (CS461): 
+
+The second course of the senior sequence covered full stack development in the same .NET framework but working in teams under Agile / Scrum development cycles with 2 week sprints. Here I worked on using the Model - View - Controller applications layers, also known as Presentation, Logic, and Database layers. This project was deployed onto Azure services using resources such as a Web Application, SQL Server, and SQL Database provided by Azure Cloud. 
+
+[Repository for MotoHub](https://bitbucket.org/tdennis15/diredog/src/master/)
+
+My team and I created a web application designed to help event managers orginize and run automotive style meet ups. Included in this project was a database to store profiles, preferences, club membership, logins, and more. Additionally we worked with Google APIs for data analysis and maps along with a DMV API to help car owners locate the make and model of their vehicle. 
+
+### Software Engineering III (CS 462):
+
+The third and final course of the senior sequence was about application lifecycles and testing. The main focus first was to break dependency of tightly coupled sections of code to allow for dependency injection. This way tests could be written to mock (MOQ) the database interfaces to test the logic. Unit testing, NUnit, and JUnit were also a big part of the regression testing for this project. For a full list of the technical requirements see [here](http://www.wou.edu/~morganb/assignments/t3/FinalTechnicalRequirements.html)
+
+[Repository for Whiskey Tango Foxtrot](https://bitbucket.org/tdennis15/drunkencoders/src/master/)
+
+This project is a .NET web application oriented around interacting with the Veterans Affairs API to help give information to potential VA clients and provide a place to discuss various problems with (potential) service providers. Creation and implementation of this project was in C# on Azure Web Services on the Cloud. Additionally we created a testing suite to verify that the project continues to function properly through different builds. This project has the same technical requirements as the one above.

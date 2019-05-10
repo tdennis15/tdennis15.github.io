@@ -1,0 +1,62 @@
+.navbar{
+   background-color: lightgray;
+    border-bottom-color: black;
+    
+}
+
+a:hover {
+    color: aqua;
+}
+#main{
+    border-bottom: solid gray;
+}
+#boxed{
+  
+}
+p {
+    font-size: 150%;
+}
+.box{
+    border: 1px solid black;
+}
+body{
+    background-color: lightblue;
+}
+
+#para1{
+    border: black;
+    color: white;
+    box-shadow: 5px 5px 2px gray;
+}
+
+#payscale, th, td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+dl{
+    display: block;
+    padding-top: 5px;
+    }
+dt{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#CmEng{
+ max-height: 100%;
+ max-width: 100%;
+    box-shadow: inset 0px 50px 40px 40px #DBA632;
+}
+
+/*
+  CSS for jQuery Table
+*/
+#careerChoice{
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+}
+#careerTable{
+  border: 1px solid white;
+  padding-top: 15px;
+  padding-left: 15px;
+}
