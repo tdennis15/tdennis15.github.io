@@ -72,7 +72,7 @@ Designed to run through top to bottom the different layers and styles various op
 
 This project was a java implementation of threads, one of which would produce a unit and another who would consume. They would have random clocks on which one was done with a cycle. Thus there could be times of excess production, or excess starvation. It was to demonstrate how thread waiting could cause problems and potential deadlocks. The majority of the course was also spent covering the various deadlocks and their proposed solutions.
 
-[TCP FLpw Behavior.pptx](OperatingSystems/TCPFlowBehavior.pptx)
+[TCP Flow Behavior.pptx](OperatingSystems/TCPFlowBehavior.pptx)
 
 Another part of the course was picking a topic and presenting to the class in a lecture style and answering questions that may arise. I chose the Transfer Communication Protocol to lecture on as it is an important part of networking and something I was curious about. 
 
