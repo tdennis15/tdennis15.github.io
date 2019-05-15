@@ -1,10 +1,17 @@
+---
+title: Travis Dennis
+layout: default
+---
+
+## [Software Engineering I (CS460)](SoftwareEngineering_I/): 
+
 The first part of the senior sequence of classes is working in .NET framework with full stack development. This was done with Visual Studios Community Edition 2017 with modules such as Entity Framework and SQL Server.
 
 [Project 1](/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
 
 [Project 2](/HW2/): Javascript, JQuery, Form Elements
 
-[Project 3](/HW3/): C# conversion therapy from JAVA xD
+[Project 3](/HW3/): C# conversion therapy from JAVA
 
 [Project 4](/HW4/): C# MVC ASP.NET web application NO database.
 
