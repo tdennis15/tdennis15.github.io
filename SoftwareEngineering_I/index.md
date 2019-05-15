@@ -9,19 +9,19 @@ The first part of the senior sequence of classes is working in .NET framework wi
 
 I started off with getting used to HTML and Javascript and then moved into C# for the rest of the projects. 
 
-[Project 1](~/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
+[Project 1](/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
 
-[Project 2](~/HW2/): Javascript, JQuery, Form Elements
+[Project 2](/HW2/): Javascript, JQuery, Form Elements
 
-[Project 3](~/HW3/): C# conversion therapy from JAVA
+[Project 3](/HW3/): C# conversion therapy from JAVA
 
-[Project 4](~/HW4/): C# MVC ASP.NET web application NO database.
+[Project 4](/HW4/): C# MVC ASP.NET web application NO database.
 
-[Project 5](~/HW5/): C# MVC ASP.NET web application with local database.
+[Project 5](/HW5/): C# MVC ASP.NET web application with local database.
 
-[Project 6](~/HW6/): Web application from a large preexisting database called AdventureWorks
+[Project 6](/HW6/): Web application from a large preexisting database called AdventureWorks
 
 
-[Project 8](~/HW8/): Web application from custom cloud database with Ajax implementation.
+[Project 8](/HW8/): Web application from custom cloud database with Ajax implementation.
 
 Project 9: Deploying Project 8 on the Azure cloud servers.
