@@ -34,29 +34,11 @@ The third and final course of the senior sequence was about application lifecycl
 This project is a .NET web application oriented around interacting with the Veterans Affairs API to help give information to potential VA clients and provide a place to discuss various problems with (potential) service providers. Creation and implementation of this project was in C# on Azure Web Services on the Cloud. Additionally we created a testing suite to verify that the project continues to function properly through different builds. This project has the same technical requirements as the one above.
 
 
-### Block Chain & Crypto Currencies (CS 480):
+### [Block Chain & Crypto Currencies (CS 480)](Blockchain/):
 
-Argueably my favorite elective, this course went over the history and future of blockchain as it applies to business and market intelligence. Blockchain is a method to build trust in a network that is inherently trustless. That way actions commited to the blockchain can be certified and any dependencies on that information is stable. There are two main types of blockchains, private and public. Public is the style used by cryptocurrency as everyone can join in, and everyone can have a full copy of the history. The interesting side of private blockchains is that an admin can regulate users and effect control over it. 
-
-[Blockchain PDF](Blockchain/TravisDennisLab2.pdf)
-
-I developed an application using Hyper Ledger Fabric that was managing the movement of fish in a market setting from a transaction point of view. This was a cradle to grave following of the fish. Covering aspects such as making new IDs with fish being caught, players such as licencing officals, restaurant owners and fishers all having unique IDs. This used a private blockchain setup with an admin able to add and remove users. 
-
-[RSA PDF](Blockain/TravisDennisLab3.pdf)
-
-Additionally I went through practices of RSA encryption methods and used private and public key encryption to send messages.
+Argueably my favorite elective, this course went over the history and future of blockchain as it applies to business and market intelligence. 
 
 
 ### Operating Systems and Networking (CS 365):
 
 Designed to run through top to bottom the different layers and styles various operating systems use to provide a fluid presentation to its user. This course covered many different structures within operating systems such as modules, monolithic and layered control schemes. A large amount of the studies went to flow control of processes and threads in order to follow from beginning to end the lifecycle of a program. 
-
-[Producers and Consumers PDF](/OperatingSystems/TravisDennisLab4.pdf)
-
-This project was a java implementation of threads, one of which would produce a unit and another who would consume. They would have random clocks on which one was done with a cycle. Thus there could be times of excess production, or excess starvation. It was to demonstrate how thread waiting could cause problems and potential deadlocks. The majority of the course was also spent covering the various deadlocks and their proposed solutions.
-
-[TCP Flow Behavior.pptx](OperatingSystems/TCPFlowBehavior.pptx)
-
-Another part of the course was picking a topic and presenting to the class in a lecture style and answering questions that may arise. I chose the Transfer Communication Protocol to lecture on as it is an important part of networking and something I was curious about. 
-
-
