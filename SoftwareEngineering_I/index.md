@@ -9,7 +9,7 @@ The first part of the senior sequence of classes is working in .NET framework wi
 
 I started off with getting used to HTML and Javascript and then moved into C# for the rest of the projects. 
 
-[Project 1](SoftwareEngineering_I/HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
+[Project 1](HW1/): HTML, CSS, Git, and Bootstrap 3.3.7
 
 [Project 2](SoftwareEngineering_I/HW2/): Javascript, JQuery, Form Elements
 
