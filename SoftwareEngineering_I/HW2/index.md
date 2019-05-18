@@ -8,9 +8,9 @@ A lot of credit goes to W3Schools for their tutorials on jQuery and JS and to
 TheNewBoston on youtube for the 200 video long tutorial playlist on jQuery alone. This YT channel has thousands of bite (byte) sized coding tutorials that are topic specific. 10/10 recommend.
 
 ## Link to Webpage 
-[HOMEWORK 2](/HW2/webpage/jQueryPage.html)
+[HOMEWORK 2](webpage/jQueryPage.html)
 
-[HOMEWORK 2 Homepage](/HW2/webpage/) : backup link, travel to the drop down menu in Nav bar for link.
+[HOMEWORK 2 Homepage](webpage/) : backup link, travel to the drop down menu in Nav bar for link.
 
 ### Step 1: link a new source for the jQuery 
 

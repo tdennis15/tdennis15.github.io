@@ -4,7 +4,7 @@ layout: default
 ---
 ## Homework 1
 As the first homework assignment in CS 460 I created a web page using HTML5, Bootstrap and Github. This was to become familiar with these tools along with giving a template for future projects. As a webpage it is rather rough because templates or page writing utilities were not allowed. Each segment of code is created for the use of this site from scratch. 
-To view the WebPage go follow the [link](/HW1/webpage).
+To view the WebPage go follow the [link](webpage/).
 
 ## Understanding Git and Github
 Creating a repository to upload all of the progress during the creation of a project makes perfect sence. However this process is also new to me because I am unsure how to avoid the clutter. I guess that's where the dead branches should go. This would happen through practice though since it would require a complete shift in my current practices. This new way is more professional and a lot easier for a group project. 
